@@ -1,0 +1,178 @@
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    body { font-size: 18px;}
+    .logo { margin-left: 20px; }
+    .main-nav:last-child { padding-right: 15px;}
+    
+    .main-heading { 
+        font-size: 190%;
+        width: 1024px;
+        padding: 0 30px;
+
+    }
+    
+    .about-us-columns { margin: 0 30px; }
+    
+    .sponsors { margin: 0 30px; }
+    
+    .reviews {
+        margin: 0 30px;
+        font-size: 86%;
+    }
+    
+    .Sign-up-information {
+        margin-left: 50px;
+        font-size: 140%;
+    }
+    
+    footer { font-size: 130%;}
+}
+
+
+/* Small tablet to Big Tablet (from 768px to 1023) */
+@media only screen and (max-width: 1023px) {
+    
+    .logo { margin-left: 20px; }
+    
+    .main-heading {
+        font-size: 180%;
+        width: 768px;
+    }
+    
+    .partners-introduction {
+        margin: 0 30px;
+    }
+    
+    .footer-impressum {
+        line-height: 170%;
+    }
+}
+
+
+/* BiggerSmart Phones to Snall Tablets (from 481px to 767px) */
+@media only screen and (max-width: 767px) {
+     .col {
+        width: 100%;
+        margin: 0 0 1% 0;
+    }
+    
+    nav {
+        font-size: 80%;
+    }
+
+    .logo { 
+        height: 50px;
+        width: auto;
+    }
+    
+     /* Sticky and Mobile navigatino ON*/
+    
+    .main-nav { display: none;}
+    .main-nav { 
+        font-size: 150%;
+        margin-bottom: 0px;
+    }
+    .mobile-nav-icon { display: inline-block;}
+    
+    
+    .main-nav li {
+        padding: 1px;
+    }
+    
+    .main-nav {
+        float: left;
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+    
+    .main-nav li {
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;  
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    
+    .sticky .main-nav { margin-top: 10px; }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {padding: 5px 0;}
+    
+    .sticky .mobile-nav-icon {
+        margin-right: 10px;
+    }
+    
+    .sticky .mobile-nav-icon  {margin-top: 10px;}
+    .sticky .mobile-nav-icon .gear-icon {color: #555;}
+    
+    
+    /* Sticky and Mobile navigatino OFF*/
+    .main-heading {
+        font-size: 160%;
+        width: 481px;
+    }
+    
+    .partners img {
+        height: 130px;
+        width: auto;
+    }
+    
+    .partners img:hover,
+    .partners img:active {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+    
+    
+    .reviews img {
+        height: 70px;
+    }
+    .colrev{
+        margin-bottom: 40px;
+    }
+    
+    .colrev:last-child {
+        margin-bottom: 0px;
+    }
+    
+    .sign-up-form {
+        margin-top: 30px;
+        margin-left: 30%;;
+        width: 100%;
+    }
+    
+    input {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    
+    label {
+        float: left;
+    }
+    
+   
+    
+}
+   
+
+/* 0 to smartPhones (from 0 to 480px) */
+@media only screen and (max-width: 480px) {
+
+    #container {
+        min-width: 380px;
+        min-height: 410px;
+    }
+    
+    .main-heading {
+        font-size: 130%;
+        width: 260px;
+    }
+    
+    #microsoft-logo {
+        max-width: 290px;
+    }
+}

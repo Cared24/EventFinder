@@ -1,0 +1,479 @@
+/*----------------------------------------------*/
+/* Basic Setup */
+/*----------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    background-color: #fff;
+    color: #555;
+    font-family: 'Barlow Condensed',  sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    text-rendering: optimizeLegibility;
+    
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    overflow-wrap: normal;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/*----------------------------------------------*/
+/* Reusable components */
+/*----------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.box {
+    padding: 1%;
+}
+/*----------------------------------------------*/
+/* Headings */
+/*----------------------------------------------*/
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+}
+
+h2 {
+    font-size: 210%;
+}
+
+h3 {
+    font-size: 170%;
+    margin-bottom: 20px;
+}
+
+h2:after {
+    display: block;
+    height: 3px;
+    content: " ";
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: #3498db;
+    margin-bottom: 30px; 
+}
+/*----------------------------------------------*/
+/* Links */
+/*----------------------------------------------*/
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #555;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+/*----------------------------------------------------------------*/
+/*---------------------------- Sections --------------------------*/
+/*----------------------------------------------------------------*/
+
+/*----------------------------------------------*/
+/* Navigation */
+/*----------------------------------------------*/
+
+.logo {
+    float: left;
+    margin-top: 14px;
+    height: 40px;
+    width: auto;
+}
+
+.main-nav {
+    float: right;
+    margin: 35px 0;
+    padding-bottom: 1px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.main-nav li {
+    list-style: none;
+    display: inline;
+    margin-left: 50px;
+}
+
+.main-nav li:last-child {
+    margin-right: 5px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    -webkit-transition: border-bottom 0.3s;
+    transition: border-bottom 0.3s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 3px solid #3498db;
+}
+
+/*----------------------------------------------*/
+/* Header */
+/*----------------------------------------------*/
+
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.92)), to(rgba(0, 0, 0, 0))),url(images/header-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0)),url(images/header-background.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-heading{
+    position: absolute;
+    width: 1140px;
+    top: 45%;
+    font-size: 250%;
+    text-align: center;
+}
+
+blockquote {
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 4px;
+    color: #fff;
+    overflow-wrap: break-word;
+}
+
+/*----------------------------------------------*/
+/* Section - About Us */
+/*----------------------------------------------*/
+
+.about-us-icons {
+    font-size: 350%;
+    color: #3498db;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 44%;
+    margin-right: 45%;
+}
+
+.about-us-icons:hover {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.about-us-description {
+    font-size: 140%;
+    text-align: justify;
+    padding-right: 25px;
+}
+
+/*----------------------------------------------*/
+/* Section - Activities*/
+/*----------------------------------------------*/
+
+.activities-photos {
+    list-style: none;
+    width: 100%;
+}
+
+
+.activities-photos li {
+    display: block;
+    float: left;
+    width: 25%;
+    
+}
+
+.activity-photo {
+    widows: 100%;
+    margin: 0;
+    overflow: hidden;
+
+    background-color: #000;
+
+}
+
+.activity-photo img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    
+}
+
+.activity-photo img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    opacity: 1;
+    -webkit-transition: -webkit-transform 1.6s;
+    transition: -webkit-transform 1.6s;
+    transition: transform 1.6s;
+    transition: transform 1.6s, -webkit-transform 1.6s;
+}
+
+/*----------------------------------------------*/
+/* Section - Partners*/
+/*----------------------------------------------*/
+
+
+.partners-introduction {
+    text-align: center;
+    font-size: 130%;
+    margin-bottom: 30px;
+}
+
+.sponsors {
+    margin-bottom: 0 auto;
+    display: inline-block;
+    margin-left: 23%;
+    
+}
+.sponsors img {
+    width: 100%;
+    height: auto;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    float: left;
+    border-radius: 7%;
+}
+
+.sponsors img:last-of-type{
+    padding-right: 0;
+}
+
+.sponsors img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transition: -webkit-transform s;
+    transition: -webkit-transform s;
+    transition: transform s;
+    transition: transform s, -webkit-transform s;
+}
+
+.sponsors .box {
+    margin-right: 0px;
+}
+
+/*----------------------------------------------*/
+/* Section - Reviews */
+/*----------------------------------------------*/
+
+
+.section-reviews {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.87)), to(rgba(0, 0, 0, 0.63))),url(images/reviews-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.63)),url(images/reviews-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+.reviews blockquote {
+
+    text-align: justify;
+    font-family: 'Sue Ellen Francisco', 'Serif';
+    font-size: 130%;
+}
+
+.box cite {
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+}
+
+.box cite img {
+    border-radius: 50%;
+}
+
+/*----------------------------------------------*/
+/* Section - Sign Up */
+/*----------------------------------------------*/
+
+.sign-up-recommendation {
+    text-align: center;
+}
+
+label {
+    float: right;
+}
+
+input {
+    width: 45%;
+}
+
+input[type=submit]{
+    width: 25%;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 10px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    background-color: #3498db;
+    border: 1px solid #3498db;
+
+}
+
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #1f74ac;
+}
+
+/*----------------------------------------------*/
+/* Footer*/
+/*----------------------------------------------*/
+
+footer {
+    background-color: #343434;
+    color: #fff;
+    padding: 40px;
+}
+
+footer li {
+    list-style: none;
+    display:  inline-block;
+}
+
+/* Footer - Impressum */
+.footer-impressum {
+    float: left;
+}
+.footer-impressum li a{
+    margin-right: 45px;
+    
+}
+
+.footer-impressum li a:hover,
+.footer-impressum li a:active{
+    padding-bottom: 2px;
+    border-bottom: 3px solid #3498db;
+    
+}
+
+/* Social Media Icons*/
+
+.footer-social-media {
+    float: right;
+}
+.sm-icon {
+    padding-right: 35px;
+    font-size: 150%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.facebook:hover,
+.facebook:active {
+    color: #3b5998;
+}
+
+.googlePlus:hover,
+.googlePlus:active {
+    color: #dd4b39;
+}
+
+.twitter:hover,
+.twitter:active {
+    color: #55acee;
+}
+
+.instagram:hover,
+.instagram:active {
+    color: #e95950;
+}
+
+.snapchat:hover,
+.snapchat:active {
+    color: #fffc00;
+}
+
+/* Footer Copyright*/
+.footer-copyright {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.icon-small {
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+
+/*----------------------------------------------*/
+/* Effects */
+/*----------------------------------------------*/
+
+/* Sticky navigation */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 2px 2px #efefef; 
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 18px;}
+
+.sticky .logo { display: block;}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #444;
+}
+
+/* Mobile Navigation */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon .gear-icon {
+    font-size: 200%;
+    color: #fff;
+}
+
+/* Animation */
+.js--fadeInAnimation,
+.js--bounceInLeftAnimation {
+    opacity: 0;
+    animation-duration: 2s;
+}
+
+.js--fadeInAnimation.animated,
+.js--bounceInLeftAnimation.animated {
+    opacity: 1;
+}
